@@ -1,5 +1,11 @@
 # potential_adjacencies_matrix
 
+Potential Adjacencies Matrices for Solving Chaotic Dynamic Multi-Agent Networks
+Funding provided by NSF Grants 
+https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836827
+https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033607
+
+
 This python code models an abstract network of nodes and vertices; the graph is then used to show TSP and maxflow algorithms for route planning. One example for msp is going from arrival to destination in a city with sub-optimal routes
 
 The diagrams are provided
