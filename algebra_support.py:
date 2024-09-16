@@ -1,0 +1,85 @@
+import numpy as np
+
+class AlgebraSupport:
+    def __init__(self, updated_data):
+        # Step 1: Assign numerical labels to characters (for source and target)
+        self.unique_nodes = sorted(set(updated_data['source'] + updated_data['target']))
+        self.node_to_index = {node: i for i, node in enumerate(self.unique_nodes)}
+        
+        # Step 2: Encode the source and target using the numerical labels
+        self.encoded_source = np.array([self.node_to_index[node] for node in updated_data['source']])
+        self.encoded_target = np.array([self.node_to_index[node] for node in updated_data['target']])
+        self.capacities = np.array(updated_data['capacity'])
+
+        # Step 3: Combine into a 2D NumPy array (matroid-like)
+        self.data_matrix = np.vstack([self.encoded_source, self.encoded_target, self.capacities]).T
+        
+        # Step 4: Create the adjacency matrix
+        self.adj_matrix = self.create_adjacency_matrix()
+
+    def create_adjacency_matrix(self):
+        """Create an adjacency matrix from the source, target, and capacity data."""
+        num_nodes = len(self.node_to_index)
+        adj_matrix = np.zeros((num_nodes, num_nodes))
+
+        for src, tgt, cap in self.data_matrix:
+            adj_matrix[int(src), int(tgt)] = cap
+
+        return adj_matrix
+
+    def compute_determinant(self):
+        """Compute the determinant of the adjacency matrix."""
+        if self.adj_matrix.shape[0] == self.adj_matrix.shape[1]:
+            return np.linalg.det(self.adj_matrix)
+        else:
+            raise ValueError("Determinant can only be computed for square matrices.")
+
+    def compute_rank(self):
+        """Compute the rank of the adjacency matrix."""
+        return np.linalg.matrix_rank(self.adj_matrix)
+
+    def compute_eigenvalues(self):
+        """Compute the eigenvalues of the adjacency matrix."""
+        return np.linalg.eigvals(self.adj_matrix)
+
+    def display_mappings(self):
+        """Display the mapping of nodes to indices."""
+        print("Node to index mapping:")
+        print(self.node_to_index)
+
+    def display_adjacency_matrix(self):
+        """Display the adjacency matrix."""
+        print("Adjacency Matrix:")
+        print(self.adj_matrix)
+
+# Usage
+if __name__ == "__main__":
+    # Example input data
+    updated_data = {
+        'source': ['a', 'a', 'b', 'c', 'c', 'e', 'f', 'g', 'a', 'f', 'd', 'e', 'h', 'b', 'c', 'h', 'g', 'i', 'i', 'j', 
+                   'j', 'k', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't'],
+        'target': ['b', 'd', 'd', 'd', 'e', 'f', 'g', 'h', 'g', 'i', 'h', 'c', 'b', 'f', 'g', 'd', 'f', 'k', 'm', 'l', 
+                   'b', 'n', 'r', 'q', 'p', 'j', 'e', 'o', 'n', 't', 'f'],
+        'capacity': [2.0, 0.5, 3.0, 2.5, 1.0, 4.0, 1.0, 3.2, 0.8, 2.1, 1.9, 4.5, 3.3, 0.6, 2.7, 4.1, 1.2, 3.4, 0.9, 2.3, 
+                     3.6, 1.1, 0.4, 3.7, 2.9, 1.5, 4.0, 0.7, 2.8, 1.0, 3.9]
+    }
+
+    # Initialize AlgebraSupport class
+    algebra_support = AlgebraSupport(updated_data)
+    
+    # Display the node to index mapping and adjacency matrix
+    algebra_support.display_mappings()
+    algebra_support.display_adjacency_matrix()
+    
+    # Perform Linear Algebra operations
+    try:
+        determinant = algebra_support.compute_determinant()
+        print(f"Determinant of the adjacency matrix: {determinant}")
+    except ValueError as e:
+        print(e)
+
+    rank = algebra_support.compute_rank()
+    print(f"Rank of the adjacency matrix: {rank}")
+
+    eigenvalues = algebra_support.compute_eigenvalues()
+    print(f"Eigenvalues of the adjacency matrix: {eigenvalues}")
