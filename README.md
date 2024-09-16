@@ -9,7 +9,7 @@ https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836827
 
 https://www.nsf.gov/awardsearch/showAward?AWD_ID=2033607
 
-Research done and applied by Siobhàn Merrill-Nyxhades (NASA JPL), under Principal Investigator Lilit Yeghiazarian
+Research done and applied by Siobhàn Merrill-Nyxhades (NASA JPL) under Principal Investigator Lilit Yeghiazarian
 
 
 This python code models an abstract network of nodes and vertices; the graph is then used to show TSP and maxflow algorithms for route planning. One example for msp is going from arrival to destination in a city with sub-optimal routes
