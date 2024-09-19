@@ -244,6 +244,11 @@ Rank of the adjacency matrix:
 Eigenvalues of the adjacency matrix:
 [0. 0. 0. 0. ... ]
 
+
+
+![Screenshot 2024-09-19 at 08 48 35](https://github.com/user-attachments/assets/1a0e5203-8d02-4aac-92c8-35b429dad737)
+
+
 Explanation:
 
     Adjacency Matrix: This matrix represents the connections (edges) between the nodes, where the value at position (i,j)(i,j) corresponds to the capacity from node i to node j.
