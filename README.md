@@ -20,6 +20,9 @@ The diagrams are provided as-is
 <img width="741" alt="Screenshot 2024-09-14 at 14 28 51" src="https://github.com/user-attachments/assets/4d9e05f4-2920-493a-8bdb-6297938da792">
 
 
+![Screenshot 2024-09-19 at 08 54 24](https://github.com/user-attachments/assets/4693bada-6f52-4be5-8873-df1ef1b530ca)
+
+
 <img width="538" alt="Screenshot 2024-09-14 at 14 32 21" src="https://github.com/user-attachments/assets/a682aedb-d8e1-4ebc-aa10-a8a634c46802">
 
 ![pam_edges_clean_network](https://github.com/user-attachments/assets/396c56d2-bf31-4432-8466-0e5983baab91)
