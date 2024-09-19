@@ -262,7 +262,13 @@ Eigenvalues of the adjacency matrix:
 
 ![Screenshot 2024-09-18 at 07 18 39](https://github.com/user-attachments/assets/79ac8487-f7c6-480b-8369-5b5acb50384d)
 
-Boom! Make the big butthole SHAKE
+Activate a singularity aka make the blorbs spin and go boom
+
+
+
+<img width="1030" alt="Screenshot 2024-09-19 at 14 58 06" src="https://github.com/user-attachments/assets/0321ffc5-3155-4f8c-8cf6-5aedda9fd172">
+
+Assessment from: https://x.com/Tendar/status/1836822868992156032
 
 Explanation:
 
