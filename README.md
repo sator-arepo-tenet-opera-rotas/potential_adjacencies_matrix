@@ -245,9 +245,16 @@ Eigenvalues of the adjacency matrix:
 [0. 0. 0. 0. ... ]
 
 
+![pam_edges_complex_network](https://github.com/user-attachments/assets/abbb8d96-1a25-4130-acec-af629b7555b7)
 
 ![Screenshot 2024-09-19 at 08 48 35](https://github.com/user-attachments/assets/1a0e5203-8d02-4aac-92c8-35b429dad737)
 
+![GXpc7qUakAAn2o7](https://github.com/user-attachments/assets/666f2341-fd49-43c4-9560-31bd5916c0cd)
+
+
+![Screenshot 2024-09-18 at 07 18 39](https://github.com/user-attachments/assets/79ac8487-f7c6-480b-8369-5b5acb50384d)
+
+Boom! Make the big butthole SHAKE
 
 Explanation:
 
