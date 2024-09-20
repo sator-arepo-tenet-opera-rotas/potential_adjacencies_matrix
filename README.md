@@ -270,6 +270,8 @@ Activate a singularity aka make the blorbs spin and go boom
 
 Assessment from: https://x.com/Tendar/status/1836822868992156032
 
+https://www.theguardian.com/world/2024/sep/18/ukraine-drone-attack-on-russian-arms-depot-toropets
+
 Explanation:
 
     Adjacency Matrix: This matrix represents the connections (edges) between the nodes, where the value at position (i,j)(i,j) corresponds to the capacity from node i to node j.
